@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>マインスイーパ | Minesweeper</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #000;
+            color: blanchedalmond;
+        }
+
+        a {
+            color: blanchedalmond;
+        }
+
+        .canvas-container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        canvas {
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="canvas-container my-2">
+        <h1 class="text-center h3">
+            <a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%91">マインスイーパ</a>
+        </h1>
+        <p class="text-center">（操作方法：左クリック、右クリック）</p>
+        <p class="text-center">
+            <button type="button" class="btn btn-light" id="level1">初級：9×9のマスに10個の地雷</button>
+            <button type="button" class="btn btn-light" id="level2">中級：16×16のマスに40個の地雷</button>
+        </p>
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
